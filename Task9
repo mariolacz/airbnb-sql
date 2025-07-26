@@ -1,0 +1,23 @@
+
+USE airbnb;
+
+CREATE TABLE AIRBNB_CITIES (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    NAME VARCHAR(255),
+	HOST_IDENTITY_VERIFIED varchar(255),
+    HOST_NAME varchar(50),
+    CITY varchar(50),
+    NEIGHBOURHOOD_GROUP varchar(50),
+    LAT decimal(9,6),
+    LONGITUDE decimal(9,6),
+    INSTANT_BOOKABLE varchar(10),
+    CANCELLATION_POLICY varchar(50),
+    ROOM_TYPE varchar(50),
+    PRICE decimal(10,2),
+    SERVICE_FEE decimal(10,2),
+    CURRENCY varchar(10), 
+    MINIMUM_NIGHTS int, 
+    NUMBER_OF_REVIEWS int, 
+    REVIEW_RATE_NUMBER decimal(3,2),
+    HOUSE_RULES TEXT
+);
